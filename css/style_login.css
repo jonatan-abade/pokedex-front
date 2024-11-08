@@ -1,0 +1,14 @@
+.apresentacao_input{
+    background-color: transparent;
+    border-radius: 3px;
+    border-width: 1px;
+}
+#login_submit{
+    display: flex;
+    align-items: center;
+    gap:8px;
+}
+#login_submit_btn{
+    height: 2em;
+    width: 6em;
+}

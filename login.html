@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_login.css">
 </head>
 <body> 
     <form class="apresentacao" onsubmit="fazerValidacaoLogin()">
@@ -18,8 +19,9 @@
                 <label for="password">Senha :</label>
                 <input class="apresentacao_input"type="password" name="password" id="password" placeholder=" senha">
             </div>
-            <div>
-                <button type="submit">Logar</button>
+            <div id ='login_submit'>
+                <button id="login_submit_btn" name="login_submit_btn" type="submit">Logar</button>
+                <img id='login_submit_pkb' src="imagens/pokebolapequena.png" alt="pokebolapequena">
             </div>
     </form>
     <script src="scripts/login.js"></script>
