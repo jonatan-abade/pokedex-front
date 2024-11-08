@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,24 +8,29 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style_login.css">
 </head>
-<body> 
-    <form class="apresentacao" onsubmit="fazerValidacaoLogin()">
-        <h3 >Login <img src="" alt=""></h3> 
-        
-            <div>
-                <label for="name">Login :</label>
-                <input class="apresentacao_input"type="text" name="name" id="name" placeholder=" email">
-            </div>        
-            <div>
-                <label for="password">Senha :</label>
-                <input class="apresentacao_input"type="password" name="password" id="password" placeholder=" senha">
-            </div>
-            <div id ='login_submit'>
-                <button id="login_submit_btn" name="login_submit_btn" type="submit">Logar</button>
-                <img id='login_submit_pkb' src="imagens/pokebolapequena.png" alt="pokebolapequena">
-            </div>
+
+<body>
+    <form class="apresentacao" onsubmit="event.preventDefault();fazerValidacaoLogin()">
+        <h3 id='apresentacao_titulo'>Login <img src="" alt=""></h3>
+
+        <div>
+            <label for="name">Login :</label>
+            <input class="apresentacao_input" type="text" name="name" id="name" placeholder=" email" value="123">
+        </div>
+        <div>
+            <label for="password">Senha :</label>
+            <input class="apresentacao_input" type="password" name="password" id="password" placeholder="senha"
+                value="123">
+            <img id="iconeVisibilidade" src="imagens/iconeInvisivel.png" alt="icone de visibilidade"
+                onclick="visibilidade()">
+        </div>
+        <div id='login_submit'>
+            <button id="login_submit_btn" name="login_submit_btn" type="submit">Logar</button>
+            <img id='login_submit_pkb' src="imagens/pokebolapequena.png" alt="pokebolapequena">
+        </div>
     </form>
     <script src="scripts/login.js"></script>
-    
+
 </body>
+
 </html>

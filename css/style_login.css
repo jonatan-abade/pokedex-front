@@ -1,3 +1,8 @@
+body{ 
+    background-color: #d1b9ba ;
+    
+    
+}
 .apresentacao_input{
     background-color: transparent;
     border-radius: 3px;
@@ -8,7 +13,43 @@
     align-items: center;
     gap:8px;
 }
+.apresentacao_input{
+    background-color: transparent;
+    border-radius: 3px;
+    border-color: rgba(0, 0, 0, 0.151);
+    padding: 0.3em 0.2em;
+    cursor: pointer;
+}
+.apresentacao_input:hover{
+    
+    box-shadow: 0px 0.8px 0.8em rgba(0, 0, 0, 0.342);
+    background-color: white;
+
+}
 #login_submit_btn{
     height: 2em;
     width: 6em;
+    font-family: "Krona One", serif;
+    background-color: white;
+    border-radius: 2em;
+    border-width: 0.1em;
 }
+#login_submit_btn:hover{
+    color: white;
+    background-color: #E00007;
+    border-width: 0;
+    box-shadow: 0px 0.8px 0.8em rgba(255, 0, 0, 0.342);
+}
+#iconeVisibilidade{
+    position: absolute;
+    height: 1.5em;
+    cursor: pointer;
+    padding-left: 0.5em;
+}
+
+#login_submit_pkb {
+    animation: rotate 2s linear infinite;
+
+ } 
+
+@keyframes rotate { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }

@@ -3,7 +3,10 @@
     padding: 0px;
     margin: 0px;
 }
-body{ background-image: url();
+.body{ 
+    background-image: url("../imagens/fundo.png");
+    background-repeat: repeat;
+
     
 }
 .apresentacao{ 
@@ -17,18 +20,14 @@ body{ background-image: url();
     margin: auto;
     margin-top: 30vh;
     font-family: "Krona One", serif;
-    background-color: #ffffff;
+    background-color: #ececec;
     padding: 18px 0px;
     border-radius: 16px;
 }
 #apresentacao_titulo{
     font-family: "Krona One", serif;
-    font-weight: 400;
-    font-style: normal;
+    width: 100%;
+    text-align: center;
     padding: auto;
-}
-.apresentacao_input{
-    background-color: transparent;
-    border-radius: 3px;
-    border-width: 1px;
+    background-color: white;
 }
