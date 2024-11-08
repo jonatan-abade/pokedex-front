@@ -28,6 +28,6 @@ window.addEventListener('load', async function () {
   recepcao.innerText = getdata
   await new Promise(r => setTimeout(r, 1000));
   recepcao.innerText = 'Vamos lá!'
-  window.location.href ='login.html'
+  // window.location.href ='login.html'
 });
 
