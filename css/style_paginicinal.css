@@ -25,8 +25,7 @@ div#apresentacao {
     position: relative;
     border: 1px solid #323231;
     background-image: linear-gradient(#7D1827 5%, red 49%, black 5%, white 49%, #CADBD1);
-    filter: drop-shadow(0em 0em 0.75em gray);
-    animation: rotateBall 5s linear infinite;
+    animation: rotateBall 1.5s infinite alternate;
 }
 
 .divider {
@@ -41,8 +40,8 @@ div#apresentacao {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 3em;
-    height: 3em;
+    width: 25%;
+    height: 25%;
     background-color: white;
     border-radius: 100%;
     border: 0.25em solid #323231;
@@ -56,15 +55,21 @@ div#apresentacao {
     border-radius: 100%;
     width: 75%;
     height: 75%;
+    border: 1px solid #323231;
 }
 
 
 @keyframes rotateBall {
     from {
-        transform: rotate(0deg);
+        width: 5em;
+        height: 5em;
+        filter: drop-shadow(0em 0em 0em black);
     }
 
     to {
-        transform: rotate(360deg);
+        width: 7.5em;
+        height: 7.5em;
+        filter: drop-shadow(0em 0em 0.75em black);
     }
+
 }

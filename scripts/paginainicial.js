@@ -22,12 +22,12 @@ async function getData() {
 window.addEventListener('load', async function () {
   let recepcao = document.getElementById('apresentacao_titulo')
   recepcao.innerHTML = 'carregando...'
-  await new Promise(r => setTimeout(r, 1000));
+  await new Promise(r => setTimeout(r, 1500));
   let getdata = await getData()
   console.log(getdata)
   recepcao.innerText = getdata
-  await new Promise(r => setTimeout(r, 1000));
+  await new Promise(r => setTimeout(r, 2000));
   recepcao.innerText = 'Vamos lá!'
-  // window.location.href ='login.html'
+  window.location.href ='login.html'
 });
 
