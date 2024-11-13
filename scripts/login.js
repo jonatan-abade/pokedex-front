@@ -23,7 +23,7 @@ function fazerValidacaoLogin() {
     }).then(async (response) => {
         let responseJSON = await response.json()
         if (response.ok) {
-            window.location.href = 'index.html'
+            window.location.href = 'pokemons.html'
         } else {
             alert(responseJSON.message)
         }
