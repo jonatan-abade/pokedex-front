@@ -13,8 +13,24 @@ function visibilidade() {
 function fazerValidacaoLogin() {
     let login = document.querySelector('input#name').value;
     let senha = document.querySelector('input#password').value;
-    console.log(login, senha);
 
+    fetch('http://127.0.0.1:3000/login', {
+        method: 'POST',
+        body: JSON.stringify({
+            email: login,
+            senha: senha
+        })
+    }).then(async (response) => {
+        let responseJSON = await response.json()
+        if (response.ok) {
+            window.location.href = 'index.html'
+        } else {
+            alert(responseJSON.message)
+        }
+
+    }).catch((error) => {
+        alert('Erro ao fazer login')
+    });
 }
 
 
