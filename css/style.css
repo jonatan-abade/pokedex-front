@@ -3,12 +3,7 @@
     padding: 0px;
     margin: 0px;
 }
-.body{ 
-    background-image: url("../imagens/fundo.png");
-    background-repeat: repeat;
 
-    
-}
 .apresentacao{ 
     display: flex;
     align-items: center;
@@ -30,4 +25,20 @@
     text-align: center;
     padding: auto;
     background-color: white;
+}
+#redefinir_senha_button{
+    height: 2em;
+    width: 8em;
+    font-family: "Krona One", serif;
+    background-color: white;
+    border-radius: 2em;
+    border-width: 0.1em;
+    margin-top: 1em;
+    
+}
+#redefinir_senha_button:hover{
+    color: white;
+    background-color: #E00007;
+    border-width: 0;
+    box-shadow: 0px 0.8px 0.8em rgba(255, 0, 0, 0.342);
 }
