@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="css/style_login.css">
     <script src="scripts/redefinirSenha.js"></script>
 </head>
+
 <body>
     <form class="apresentacao" onsubmit="event.preventDefault();redefinirSenha()">
         <div>
@@ -17,14 +19,17 @@
         </div>
         <div>
             <label for="password">Novasenha :</label>
-            <input class="apresentacao_input" type="password" name="newpassword" id="newpassword" placeholder="novasenha">
+            <input class="apresentacao_input" type="password" name="newpassword" id="newpassword"
+                placeholder="novasenha">
             <img id="iconeVisibilidade" src="imagens/iconeInvisivel.png" alt="icone de visibilidade"
                 onclick="visibilidade()">
         </div>
+        <div id="loading"></div>
         <div class="box_submit">
-          <button type="submit" id="redefinir_senha_button" >Redefinir</button>
-          
+            <button type="submit" id="redefinir_senha_button">Redefinir</button>
+
         </div>
     </form>
 </body>
+
 </html>

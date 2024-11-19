@@ -9,11 +9,13 @@ function visibilidade() {
         icone.src = "../imagens/iconeInvisivel.png"
     }
 }
-function redefinirSenha(){
+async function redefinirSenha() {
+    document.querySelector("#loading").innerText = "Carregando..."
+
     let login = document.querySelector('input#name').value;
     let novasenha = document.querySelector('input#newpassword').value;
 
-    fetch('http://127.0.0.1:3000/redefinir-senha', {
+    await fetch('http://127.0.0.1:3000/redefinir-senha', {
         method: 'POST',
         body: JSON.stringify({
             email: login,
@@ -31,4 +33,5 @@ function redefinirSenha(){
     }).catch((error) => {
         alert('Erro ao redefinir senha!')
     });
+    document.querySelector("#loading").innerText = ""
 }
