@@ -25,11 +25,27 @@ function fazerValidacaoLogin() {
         if (response.ok) {
             window.location.href = 'pokemons.html'
         } else {
-            alert(responseJSON.message)
+            Toastify({
+                text: responseJSON.message,
+                className: "info",
+                position: "center",
+                style: {
+    
+                  background: "linear-gradient(to right, #F0111A, #F04B0B)",
+                }
+              }).showToast();
         }
 
     }).catch((error) => {
-        alert('Erro ao fazer login')
+        Toastify({
+            text: "Erro ao fazer login",
+            className: "info",
+            position: "center",
+            style: {
+
+              background: "linear-gradient(to right, #F0111A, #F04B0B)",
+            }
+          }).showToast();
     });
 }
 

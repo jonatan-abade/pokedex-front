@@ -26,15 +26,15 @@ body{
     background-color: white;
 
 }
-#login_submit_btn{
+#sendtoken_button{
     height: 2em;
-    width: 6em;
+    width: 12em;
     font-family: "Krona One", serif;
     background-color: white;
     border-radius: 2em;
     border-width: 0.1em;
 }
-#login_submit_btn:hover{
+#sendtoken_button:hover{
     color: white;
     background-color: #E00007;
     border-width: 0;
@@ -43,11 +43,15 @@ body{
 #esqc{
     font-family: Arial, Helvetica, sans-serif;
 }
+#p1{
+    font-family: Arial, Helvetica, sans-serif;
+    font: 100, Arial, Helvetica, sans-serif ;
+    padding: auto;
+    text-align: center;
+}
 #iconeVisibilidade{
     position: absolute;
     height: 1.5em;
     cursor: pointer;
     padding-left: 0.5em;
 }
-
-

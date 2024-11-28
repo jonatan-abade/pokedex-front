@@ -7,16 +7,18 @@
     <title>Login</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style_login.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 </head>
 
 <body>
-    <form class="apresentacao" onsubmit="event.preventDefault();fazerValidacaoLogin()">
-        <h3 id='apresentacao_titulo'>Login <img src="" alt=""></h3>
+    <form class="apresentacao" onsubmit="fazerValidacaoLogin()">
+        <h3 id='apresentacao_titulo'>Login</h3>
 
         <div>
             <label for="name">Login :</label>
             <input class="apresentacao_input" type="text" name="name" id="name" placeholder=" email"
-                value="teste@teste.com">
+                >
         </div>
         <div>
             <label for="password">Senha :</label>
@@ -25,7 +27,7 @@
             <img id="iconeVisibilidade" src="imagens/iconeInvisivel.png" alt="icone de visibilidade"
                 onclick="visibilidade()">
         </div>
-        <div id="esqc"> esqueceu sua senha? <a href="redefinirsenha.html"> clique aqui!</a></div>
+        <div id="esqc"> esqueceu sua senha? <a href="sendtoken.html"> clique aqui!</a></div>
         <div class='box_submit'>
             <button id="login_submit_btn" name="login_submit_btn" type="submit">Logar</button>
             <img id='login_submit_pkb' src="imagens/pokebolapequena.png" alt="pokebolapequena">

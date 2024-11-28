@@ -24,14 +24,39 @@ async function redefinirSenha() {
     }).then(async (response) => {
         let responseJSON = await response.json()
         if (response.ok) {
-            console.log('senha redefinida com sucesso!')
+            Toastify({
+                text: "Senha redefinida com Sucesso",
+                className: "info",
+                position: "center",
+                style: {
+
+                  background: "linear-gradient(to right, #22F059, #BFF006)",
+                }
+              }).showToast();
+              
 
         } else {
-            alert(responseJSON.message)
+            Toastify({
+                text: responseJSON.message,
+                className: "info",
+                position: "center",
+                style: {
+
+                  background: "linear-gradient(to right, #F0111A, #F04B0B)",
+                }
+              }).showToast();
         }
 
     }).catch((error) => {
-        alert('Erro ao redefinir senha!')
+        Toastify({
+            text: "Erro ao redefinir senha!",
+            className: "info",
+            position: "center",
+            style: {
+
+              background: "linear-gradient(to right, #F0111A, #F04B0B)",
+            }
+          }).showToast();
     });
     document.querySelector("#loading").innerText = ""
 }

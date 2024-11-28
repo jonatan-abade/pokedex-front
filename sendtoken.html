@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Token</title>
+    <script src="scripts/sendToken.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_token.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+</head>
+<body>
+    <form class="apresentacao" onsubmit="event.preventDefault();sendToken()">
+        <p id="p1">Precisamos validar seu cadastro. Insira o e-email vinculado para receber um token, e siga as instruções.</p>
+        <div>
+            <label for="email">Seu email :</label>
+            <input class="apresentacao_input" type="text" name="email" id="email" placeholder="email"
+                >
+        </div>
+        <div id="input_token" hidden="true">
+            <label for="token">Token de redefinição :</label>
+            <input class="apresentacao_input" type="token" name="token" id="token"
+                placeholder="token">
+            <img id="iconeVisibilidade" src="imagens/iconeInvisivel.png" alt="icone de visibilidade"
+                onclick="visibilidade()">
+        </div>
+        <div id='botao'class="box_submit">
+            <button type="submit" id="sendtoken_button">Enviar token</button>
+
+        </div>
+    </form>
+</body>
+</html>
