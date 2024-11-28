@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
-*{
+
+* {
     padding: 0px;
     margin: 0px;
 }
 
-.apresentacao{ 
+.apresentacao {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column ;
+    flex-direction: column;
     box-sizing: border-box;
-    gap: 40px;
+    gap: 1.5em;
     width: 500px;
     margin: auto;
     margin-top: 30vh;
@@ -19,14 +20,15 @@
     padding: 18px 0px;
     border-radius: 16px;
 }
-#apresentacao_titulo{
+
+#apresentacao_titulo {
     font-family: "Krona One", serif;
     width: 100%;
     text-align: center;
     padding: auto;
-    background-color: white;
 }
-#redefinir_senha_button{
+
+#redefinir_senha_button {
     height: 2em;
     width: 8em;
     font-family: "Krona One", serif;
@@ -34,9 +36,10 @@
     border-radius: 2em;
     border-width: 0.1em;
     margin-top: 1em;
-    
+
 }
-#redefinir_senha_button:hover{
+
+#redefinir_senha_button:hover {
     color: white;
     background-color: #E00007;
     border-width: 0;
