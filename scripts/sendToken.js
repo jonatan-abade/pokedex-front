@@ -21,6 +21,7 @@
         }).then(async (response) => {
             let responseJSON = await response.json()
             if (response.ok) {
+                document.getElementById('p1').innerText = ""
                 document.querySelector('div#input_token').removeAttribute('hidden')
                 Toastify({
                     text: responseJSON.message,

@@ -10,6 +10,7 @@ function visibilidade() {
     }
 }
 async function redefinirSenha() {
+
     document.querySelector("#loading").innerText = "Carregando..."
 
     let login = document.querySelector('input#name').value;
@@ -33,8 +34,6 @@ async function redefinirSenha() {
                   background: "linear-gradient(to right, #22F059, #BFF006)",
                 }
               }).showToast();
-              
-
         } else {
             Toastify({
                 text: responseJSON.message,
